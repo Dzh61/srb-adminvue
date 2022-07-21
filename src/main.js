@@ -9,7 +9,7 @@ import router from "@/router";
 
 
 Vue.prototype.$http=axios
-axios.defaults.baseURL = 'http://localhost:8080/'
+axios.defaults.baseURL = 'http://localhost:8110/'
 Vue.use(ElementUI);
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
