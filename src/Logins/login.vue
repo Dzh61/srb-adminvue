@@ -4,7 +4,7 @@
       <el-header class="navigation nav">
         <el-row class="nav-image" type="flex" justify="start">
          <div class="nav-image_logo">
-            <img src="../assets/img/17.jpg" />
+<!--            <img src="../assets/img/17.jpg" />-->
           </div>
           <span class="nav-welcome">
             <b>2006JA金融系统&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎登录</b>
@@ -14,7 +14,7 @@
       <el-main>
         <!-- 登录页面 -->
         <el-row class="login_page" type="flex" justify="end">
-          <img src="../assets/img/logingBg.png" />
+<!--          <img src="../assets/img/logingBg.png" />-->
           <div class="grid-content bg-purple">
             <el-container>
               <el-header class="login_main login_main_header">

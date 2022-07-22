@@ -12,7 +12,7 @@
           <div class="right-menu">
             <el-dropdown class="avatar-container right-menu-item" trigger="click">
               <div class="avatar-wrapper">
-                <img src="../assets/img/ns-160x160.jpg" class="user-avatar">
+<!--                <img src="../assets/img/ns-160x160.jpg" class="user-avatar">-->
                   2006JA.
               </div>
               <el-dropdown-menu slot="dropdown">
