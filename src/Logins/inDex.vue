@@ -21,7 +21,6 @@
 
 <script>
 
-
 import headZj from "@/components/headZj";
 import MenuHome from "@/components/MenuHome";
 

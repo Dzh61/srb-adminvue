@@ -3,9 +3,9 @@
     <el-container>
       <el-header class="navigation nav">
         <el-row class="nav-image" type="flex" justify="start">
-<!--          <div class="nav-image_logo">
+         <div class="nav-image_logo">
             <img src="../assets/img/17.jpg" />
-          </div>-->
+          </div>
           <span class="nav-welcome">
             <b>2006JA金融系统&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎登录</b>
           </span>

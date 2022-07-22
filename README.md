@@ -1,4 +1,4 @@
-# srb-adminvue
+# srb-admin
 
 ## Project setup
 ```
