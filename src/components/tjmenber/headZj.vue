@@ -6,7 +6,7 @@
           <!-- Logo -->
           <a href="#" class="logo" style="text-align:center">
              <span class="nav-welcome">
-            <b>2006JA健康管理系统&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎登录</b>
+            <b>2006JA尚融宝管理系统&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎登录</b>
           </span>
           </a>
           <div class="right-menu">

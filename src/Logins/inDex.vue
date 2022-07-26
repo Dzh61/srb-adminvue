@@ -21,8 +21,8 @@
 
 <script>
 
-import headZj from "@/components/headZj";
-import MenuHome from "@/components/MenuHome";
+import headZj from "@/components/tjmenber/headZj";
+import MenuHome from "@/components/tjmenber/MenuHome";
 
 export default {
   name: "inDex",

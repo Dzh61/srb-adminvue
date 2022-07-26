@@ -49,7 +49,7 @@ export default {
 
   //组件加载完成时就执行
   beforeCreate() {
-    this.$http.get('/api/zcmenus.action').then(res => {
+    this.$http.get('/admin/core/zcmenus.action').then(res => {
 
       this.menusList = res.data;
     }).catch(err => {

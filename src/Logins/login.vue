@@ -181,6 +181,7 @@
 
 <script>
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: "login",
 
   data() {
@@ -203,7 +204,7 @@ export default {
             spinner: "el-icon-loading",
             background: "rgba(0, 0, 0, 0.7)",
           });
-          this.$http.post("/api/login", User, {
+          this.$http.post("/admin/core/login", User, {
                 headers: {
                   "Content-Type": "application/json;charset=utf-8", //设置请求头
                 },
