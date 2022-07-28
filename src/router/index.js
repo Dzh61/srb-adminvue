@@ -3,10 +3,13 @@ import VueRouter from "vue-router";
 
 import login from "@/Logins/login";
 import inDex from "@/Logins/inDex";
-import {Menu} from "element-ui";
 import User from "@/components/system/User";
 import Role from "@/components/system/Role";
-import list from "@/views/core/user-info/list";
+import userList from "@/views/core/user-info/list";
+import borrowerDetail from "@/views/core/borrower/detail"
+import borrowerList from "@/views/core/borrower/list"
+import borrowInfoDetail from "@/views/core/borrow-info/detail"
+import borrowInfoList from "@/views/core/borrow-info/list"
 
 
 const vueRouter = new VueRouter({
@@ -28,12 +31,6 @@ const vueRouter = new VueRouter({
             component: inDex,
 
             children: [
-                //菜单管理
-                {
-                    path: '/caidangl',
-                    name: 'menu',
-                    component: Menu,
-                },
                 //角色管理
                 {
                     path:'/Roletable',
@@ -46,12 +43,32 @@ const vueRouter = new VueRouter({
                     name:'User',
                     component:User,
                 },
-
                 {
-                    path:'/jiekuan',
-                    name:'list',
-                    component:list,
+                    path:'/userList',
+                    name:'userList',
+                    component:userList,
                 },
+                {
+                    path:'/borrowerList',
+                    name:'borrowerList',
+                    component:borrowerList,
+                },
+                {
+                    path:'/borrowerDetail/:id',
+                    name:'borrowerDetail',
+                    component:borrowerDetail,
+                },
+                {
+                    path:'/borrowInfoList',
+                    name:'borrowInfoList',
+                    component:borrowInfoList,
+                },
+                {
+                    path:'/borrowInfoDetail/:id',
+                    name:'borrowInfoDetail',
+                    component:borrowInfoDetail,
+                },
+
             ]
         },
     ]

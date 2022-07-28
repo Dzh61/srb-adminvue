@@ -132,7 +132,7 @@
 </template>
 
 <script>
-import userInfoApi from '@/api/core/user-info'
+import userInfoApi from '@/api/user-info'
 
 export default {
   // components:{
