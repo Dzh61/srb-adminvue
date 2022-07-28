@@ -34,13 +34,6 @@ const vueRouter = new VueRouter({
                     name: 'menu',
                     component: Menu,
                 },
-
-                //菜单管理
-                {
-                    path:'/caidangl',
-                    name:'menu',
-                    component:Menu,
-                },
                 //角色管理
                 {
                     path:'/Roletable',
