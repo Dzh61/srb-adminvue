@@ -6,6 +6,8 @@ import inDex from "@/Logins/inDex";
 import {Menu} from "element-ui";
 import User from "@/components/system/User";
 import Role from "@/components/system/Role";
+import list from "@/views/core/user-info/list";
+
 
 const vueRouter = new VueRouter({
     routes: [
@@ -50,6 +52,12 @@ const vueRouter = new VueRouter({
                     path:'/Usertable',
                     name:'User',
                     component:User,
+                },
+
+                {
+                    path:'/jiekuan',
+                    name:'list',
+                    component:list,
                 },
             ]
         },

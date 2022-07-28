@@ -135,6 +135,10 @@
 import userInfoApi from '@/api/core/user-info'
 
 export default {
+  // components:{
+  //   userInfoApi
+  // },
+  name:"list",
   data() {
     return {
       list: null, // 数据列表

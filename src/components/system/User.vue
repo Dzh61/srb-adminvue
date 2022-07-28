@@ -10,7 +10,7 @@
     <el-card>
       <el-row style="height:2px" :gutter='20'>
         <el-col :span='4'>
-          <el-button type='primary' @click='addUserVisible = true'>新增</el-button>
+          <el-button type='primary' @click='addUserVisible=true'>新增</el-button>
         </el-col>
         <el-col :span='8'>
           <el-input placeholder='请输入内容' v-model='queryInfo.username' clearable @clear='queryAllUser'>
@@ -114,11 +114,9 @@
       <!-- 添加内容主体区域 -->
       <el-form :model="addForm" ref="addFormRef" label-width="70px">
         <el-row>
-
-
           <el-col :span="12">
             <el-form-item label="生日：" prop="birthday">
-              <el-input v-model="addForm.birthday" placeholder="请输入疾病名称"></el-input>
+              <el-input type="date" v-model="addForm.birthday" placeholder="请输入疾病名称"></el-input>
             </el-form-item>
             <div class="grid-content bg-purple"></div>
           </el-col>
@@ -172,8 +170,8 @@
 
       <!-- 底部区域 -->
       <span slot="footer" class="dialog-footer">
-        <el-button @click="addJiBingVisible = false">取 消</el-button>
-        <el-button type="primary" @click="addJiBing">确 定</el-button>
+        <el-button @click="addUserVisible = false">取 消</el-button>
+        <el-button type="primary" @click="addUSer">确 定</el-button>
       </span>
     </el-dialog>
   </div>
@@ -245,7 +243,7 @@ export default {
       this.$refs.addFormRef.validate(async valid => {
         if (!valid) return
         //可以发起添加用户的网络请求
-        const {date: res} = await this.$http.post('/admin/core/addUser.action', this.addForm)
+        const {date: res} = await this.$http.post('/admin/core/adduser.action', this.addForm)
 
         this.$message.success('添加用户成功')
         //隐藏添加用户的对话框
@@ -281,6 +279,7 @@ export default {
     },
     //是否删除对话框
     async delUser(id) {
+      console.log(id)
       const confirmResult = await this.$confirm(
           '此操作将永久删除，是否继续',
           '提示',
@@ -293,7 +292,7 @@ export default {
       if (confirmResult !== 'confirm') {
         return this.$message.info('已经取消删除!')
       }
-      const {date: res} = await this.$http.delete('/admin/core/delUser.action/${id}')
+      const {date: res} = await this.$http.delete('/admin/core/deluser.action/'+id)
 
       this.$message.success('删除成功')
       await this.queryAllUser()
