@@ -10,6 +10,8 @@ import borrowerDetail from "@/views/core/borrower/detail"
 import borrowerList from "@/views/core/borrower/list"
 import borrowInfoDetail from "@/views/core/borrow-info/detail"
 import borrowInfoList from "@/views/core/borrow-info/list"
+import dictList from "@/views/core/dict/list"
+
 
 
 const vueRouter = new VueRouter({
@@ -68,6 +70,12 @@ const vueRouter = new VueRouter({
                     name:'borrowInfoDetail',
                     component:borrowInfoDetail,
                 },
+                {
+                    path:'/dictList',
+                    name:'dictList',
+                    component:dictList,
+                },
+
 
             ]
         },
