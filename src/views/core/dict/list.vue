@@ -62,7 +62,7 @@ export default {
   data() {
     return {
       dialogVisible: false, // 对话框是否显示
-      BASE_API: "location:8180", // 获取后端接口地址
+      BASE_API: "http://localhost:8180", // 获取后端接口地址
       list: [] // 数据字典列表
     }
   },
