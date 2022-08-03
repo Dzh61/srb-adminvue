@@ -119,7 +119,7 @@ export default {
     },
 
     back() {
-      this.$router.push('/core/borrower/info-list')
+      this.$router.push('/index')
     }
   }
 }

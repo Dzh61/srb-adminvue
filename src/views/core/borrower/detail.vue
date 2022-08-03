@@ -241,7 +241,7 @@ export default {
 
     back() {
       // this.$router.push({path: '/core/borrower/list'})
-      this.$router.push('/core/borrower/list')
+      this.$router.push('/index')
     },
 
     approvalSubmit() {
