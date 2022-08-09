@@ -249,7 +249,7 @@ export default {
       this.approvalForm.borrowerId = this.$route.params.id
       borrowerApi.approval(this.approvalForm).then(response => {
         this.$message.success(response.message)
-        this.$router.push('/core/borrower/list')
+        this.$router.push('/index')
       })
     }
   }
