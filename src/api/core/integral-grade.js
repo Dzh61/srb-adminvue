@@ -22,7 +22,7 @@ export default {
 
   save(integralGrade) {
     return request({
-      url: '/admin/core/integralGrade/save',
+      url: '/admin/core/addIntegral.action',
       method: 'post',
       data: integralGrade
     })

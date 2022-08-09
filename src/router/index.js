@@ -13,8 +13,8 @@ import borrowInfoList from "@/views/core/borrow-info/list"
 import dictList from "@/views/core/dict/list"
 import lendDetail from "@/views/core/lend/detail"
 import lendList from "@/views/core/lend/list"
-
-
+import list1 from "@/components/integral-grade/list1";
+import form1 from "@/components/integral-grade/form1";
 
 const vueRouter = new VueRouter({
     routes: [
@@ -87,7 +87,16 @@ const vueRouter = new VueRouter({
                     name:'lendList',
                     component:lendList,
                 },
-
+                {
+                    path:'/list1',
+                    name:'list',
+                    component:list1,
+                },
+                {
+                    path:'/form1',
+                    name:'form1',
+                    component:form1,
+                },
 
             ]
         },
